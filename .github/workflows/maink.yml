@@ -33,8 +33,7 @@ jobs:
       - name: Load and push image
         env:
           IMAGE: ${{ fromJson(steps.deployAccess.outputs.response).name }}
-        shell: bash
         run: |
-          docker load --input ${{ inputs.image_path }}
+          docker load < ${{ inputs.image_path }}
           docker tag ${{ inputs.image_name }} $IMAGE
           docker push $IMAGE
