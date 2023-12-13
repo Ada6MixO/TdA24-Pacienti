@@ -34,6 +34,6 @@ jobs:
         env:
           IMAGE: ${{ fromJson(steps.deployAccess.outputs.response).name }}
         run: |
-          docker load < ${{ inputs.image_path }}
+          cat ${{ inputs.image_path }} | docker load
           docker tag ${{ inputs.image_name }} $IMAGE
           docker push $IMAGE
