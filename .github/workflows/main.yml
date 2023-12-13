@@ -1,3 +1,11 @@
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
 name: 'Upload app to TdA'
 description: 'Upload action for the NK of TdA24 competition – staging setting.'
 author: 'Student Cyber Games'
