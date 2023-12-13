@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DVD Screen Saver</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            width: 750px;
+            height: 750px;
+            border: 3px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .container h1 {
+            position: absolute;
+            transform-origin: top left;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><strong>Hello TdA</strong></h1>
+    </div>
+
+    <script>
+        const h1Element = document.querySelector('h1');
+        const containerElement = document.querySelector('.container');
+
+        const containerWidth = containerElement.offsetWidth;
+        const containerHeight = containerElement.offsetHeight;
+        const h1Width = h1Element.offsetWidth;
+        const h1Height = h1Element.offsetHeight;
+
+        const maxX = containerWidth - h1Width;
+        const maxY = containerHeight - h1Height;
+
+        let dx = 5;
+        let dy = 5;
+
+        setInterval(() => {
+            const currentX = parseInt(h1Element.style.left) || 0;
+            const currentY = parseInt(h1Element.style.top) || 0;
+
+            let newX = currentX + dx;
+            let newY = currentY + dy;
+
+            if (newX <= 0 || newX >= maxX) {
+                dx = -dx;
+                h1Element.style.color = getRandomColor();
+            }
+
+            if (newY <= 0 || newY >= maxY) {
+                dy = -dy;
+                h1Element.style.color = getRandomColor();
+            }
+
+            h1Element.style.left = newX + 'px';
+            h1Element.style.top = newY + 'px';
+        }, 50);
+
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    </script>
+</body>
+</html>
