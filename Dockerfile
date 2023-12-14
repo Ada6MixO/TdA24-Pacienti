@@ -10,7 +10,7 @@ COPY . .
 EXPOSE 8000
 
 # Provést migrace
-RUN python manage.py migrate myproject migrace
+RUN python manage.py migrate
 
 # Spustit vývojový server
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
