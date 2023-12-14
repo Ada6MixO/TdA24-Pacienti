@@ -1,0 +1,159 @@
+body{
+    background: #ffffff;
+    padding: 0;
+    margin: 0;
+   
+}
+.section_1{
+    padding-top: 3vh;
+    margin: 0;
+    background: #74c7d3;
+    width: 37vw;
+    height: 97vh;
+    position: relative;
+}
+.section_2{
+  padding: 0;
+  margin-left: 3vw;
+}
+.section_3{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  bottom: 75vh;
+  left: 50vw;
+  width: 500px;
+  text-overflow: clip;
+  line-height: 40px;
+  font-size: 25px;
+  color: #000000;
+  border-radius: 15px;
+  background-color: #33333333;
+}
+.section_4{
+  padding: 0;
+  margin: 0;
+  left: 1vw;
+  position:relative;
+  top: 7vh;
+  
+}
+.menu{
+  position: relative;
+  padding-top: 20px;
+  text-align: center;
+  right: 30px;
+}
+
+.menu_item{
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  font-size:17px;
+  
+}
+
+.menu_item a{
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 25px;
+  
+}
+.menu_item a:hover{
+  background-color: #fecb2e;
+  color: black;
+  border-radius: 25px;
+}
+.menu_item_text{
+  position: relative;
+  font-size: 15px;
+}
+.portfolio{
+  padding: 0;
+  margin: 0;
+}
+#photo_1{
+  padding: 0;
+  margin: 0;
+  width: 300px;
+  height: auto;
+  position: relative;
+  top: -2.75vh;
+  left: 5vw; 
+  border-radius: 10px;
+  filter:saturate(2);
+  filter: brightness(1.5);
+}
+.claims{
+  font-size: 19px;
+  font:bold;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  margin-top: 1.5vh;
+  position: relative;
+  align-self:center;
+  left: 1vw;
+  top: -2.75vh;
+  }
+
+.p1{
+  color: #333333;
+  border: 0;
+  margin: 0;
+  padding-bottom: 47%;
+  padding-top: 47%;
+  font-family:"Arial, Helvetica, sans-serif";
+}
+
+
+.Headings_1{
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: -4vh;
+  text-align: center;
+  color: #ffffff;
+}
+.head_1{
+  margin-top: 7px;
+  margin-bottom: 0;
+  padding: 0;
+  position: inherit;
+}
+.head_0{
+  padding: 0;
+  margin-top: 7.5px;
+  margin-bottom: 5px;
+  position: inherit;
+}
+.bio_1{
+  margin: 0;
+  padding: 0;
+}
+.bio_2{
+  padding: 0;
+  margin: 20px;
+  font-size: 48px;
+}
+.contact_1{
+  margin: 0;
+  padding: 0;
+
+}
+.contact_2{
+  margin: 0;
+  padding: 0;
+}
+#logo{
+  padding: 0;
+  margin: 0;
+  height: auto;
+  width: 90px;
+  left: 90vw;
+  position: relative;
+}
